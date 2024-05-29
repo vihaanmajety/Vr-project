@@ -1,0 +1,11 @@
+Model Information:
+* title:	geometric jellyfish
+* source:	https://sketchfab.com/3d-models/geometric-jellyfish-4fa36b226a544c90ad8433df0878c594
+* author:	vivifu (https://sketchfab.com/vivifu)
+
+Model License:
+* license type:	CC-BY-ND-4.0 (http://creativecommons.org/licenses/by-nd/4.0/)
+* requirements:	Author must be credited. Modified versions can not be distributed. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "geometric jellyfish" (https://sketchfab.com/3d-models/geometric-jellyfish-4fa36b226a544c90ad8433df0878c594) by vivifu (https://sketchfab.com/vivifu) licensed under CC-BY-ND-4.0 (http://creativecommons.org/licenses/by-nd/4.0/)

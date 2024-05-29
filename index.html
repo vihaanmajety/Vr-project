@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Online Zoo</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <link href="./style.css" rel="stylesheet" />
+  <script src="./js/markerHandler.js"></script>
+  <script src="./js/addMarkers.js"></script>
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+    <a-scene id="main-scene" vr-mode-ui="enabled: false" embedded
+      arjs="sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;debugUIEnabled: false;"
+      gesture-detector create-markers create-buttons>
+      <!-- Camera -->
+      <a-entity camera></a-entity>
+      
+      <a-assets>
+        <a-asset-item id="dolphin-model" src="./assets/dolphin/model_61a_-_bottlenose_dolphin/scene.gltf"></a-asset-item>
+      </a-assets>
+  
+      <!--Pattern Marker-->
+      <a-marker id="dolphin" type="pattern" url="./assets/pattern-Dolphin.patt" cursor="rayOrigin: mouse"
+        markerhandler>
+
+        <a-entity id="dolphin" position="-2 1 0.1" scale="0.05 0.05 0.05" gltf-model="#dolphin-model"
+        gesture-handler>
+      </a-entity>
+    </a-marker>
+    </a-scene>
+</body>  
+
